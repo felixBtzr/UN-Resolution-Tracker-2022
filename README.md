@@ -2,14 +2,6 @@
 
 Die United Nations Resolution Tracker ist eine Webanwendung, die entwickelt wurde, um die Resolutionen der Vereinten Nationen aus dem Jahr 2022 zu verarbeiten und visuell darzustellen. Die Anwendung ermöglicht es Benutzern, Abstimmungsergebnisse anzuzeigen, eine Weltkarte basierend auf den Abstimmungen der Länder einzufärben, Informationen zu Mitgliedstaaten der UN abzurufen, Allianzen auf der Welt zu erkunden und statistische Vergleiche zwischen zwei Ländern durchzuführen.
 
-# Autoren
-<ul>
-   <li>Jesko Ayaz</li>
-   <li>Felix Bitzer</li>
-   <li>Christina Krasnov</li>
-   <li>Lenya Peters</li>
-</ul>
-
 ## Inhaltsverzeichnis
 
 1. [Installation](#installation)
