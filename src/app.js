@@ -26,10 +26,10 @@ try {
 
 // Erstellen eines neuen PostgreSQL-Clients mit den Verbindungsinformationen
 const client = new Client({
-    host: 'dl-datenbank',
-    database: 'm15_22_2204_group2',
-    user: 'm15_22_2204_group2',
-    password: 'ZhjnZEMVx4KVXdQuV8JP',
+    host: 'DBHost',
+    database: 'meineDB',
+    user: 'meinCoolerUser',
+    password: 'superGeheim',
     port: 5432
 });
 
