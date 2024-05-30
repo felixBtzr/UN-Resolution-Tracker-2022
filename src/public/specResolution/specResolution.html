@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETAILED VIEW OF RESOLUTION</title>
+    <link rel="stylesheet" href="/every/main.css">
+    <link rel="stylesheet" href="/specResolution/specResolution.css">
+    <link rel="stylesheet" href="map/leaflet.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="specResolutionFill.js"></script>
+    <script src="map/leaflet-src.js"></script>
+
+</head>
+<body>
+<div class="header">
+        <h1>UN RESOLUTION TRACKER 2022</h1>
+</div>
+<div>
+    <table class="headerTable" aria-hidden="true">
+        <tr>
+            <td id="headerTableValue1" class="headerTableValue"><a href="../allgResolution/allgResolution.html">RESOLUTIONS</a></td>
+            <td id="headerTableValue2" class="headerTableValue"><a href="../un/un.html">ABOUT UN</a></td>
+            <td id="headerTableValue3" class="headerTableValue"><a href="../alliances/alliances.html">ABOUT ALLIANCES</a></td>
+            <td id="headerTableValue4" class="headerTableValue"><a href="../countries/countries.html">ABOUT COUNTRIES</a></td>
+            <td id="headerTableValue5" class="headerTableValue"><a href="../votingStatistics/votingStatistics.html">VOTING STATISTICS</a></td>
+        </tr>
+    </table>
+</div>
+<div class="margin-top-header"></div>
+<div id="logo">
+    <a href="../index/index.html" class="logo-link">
+        <img src="/images/un_PNG7.png" alt="">
+    </a>
+</div>
+<section>
+    <h2 class="informationResolution-Heading" id="resolutionTitle"></h2>
+</section>
+<section>
+    <div class="margin-header-details"></div>
+    <div class="dropdown" id="dropdownContainer">
+        <button class="dropbtn" id="dropdownButton">SELECT ANOTHER RESOLUTION YOU WANT TO DISPLAY</button>
+        <div class="dropdown-content" id="dropdownOptions"></div>
+    </div>
+</section>
+<section>
+    <table aria-hidden="true">
+        <tr>
+            <th id="dataField" colspan="4">KEY DATA</th>
+        </tr>
+        <tr>
+            <th scope="col" class="dataFieldTable">Resolution adopted or rejected</th>
+            <th scope="col" class="dataFieldTable">Number of resolution</th>
+            <th scope="col" class="dataFieldTable">Tags</th>
+            <th scope="col" class="dataFieldTable">Link to resolution</th>
+        </tr>
+        <tr>
+            <td class="dataFieldTable"  id="dataFieldTableAdopted"></td>
+            <td class="dataFieldTable" id="dataFieldTableResNr"></td>
+            <td class="dataFieldTable" id="dataFieldTableTags"></td>
+            <td class="dataFieldTable" id="dataFieldTableLink"></td>
+        </tr>
+        <tr>
+            <th class="dataFieldTable" scope="col">Summary of Draft Result</th>
+            <th class="dataFieldTable" id="dataFieldTableHeadAuthors" colspan="4">Authors of resolution</th>
+        </tr>
+        <tr>
+            <td class="dataFieldTable" id="dataFieldTableSummary">
+                <div id="dataFieldSummaryCategories">
+                    <div>
+                        <a>Voted with "YES":</a><br>
+                        <a>Voted with "NO":</a><br>
+                        <a>Voted with "ABSENT":</a><br>
+                        <a>Voted with "NOT VOTED":</a><br>
+                    </div>
+                    <div id="dataFieldSummaryNumbers">
+                        <a id="votedWithYesResult"></a><br>
+                        <a id="votedWithNoResult"></a><br>
+                        <a id="votedWithAbsentResult"></a><br>
+                        <a id="votedWithNVResult"></a><br>
+                    </div>
+                </div>
+            </td>
+
+            <td class="dataFieldTable" id="dataFieldTableAuthors" colspan="4"></td>
+        </tr>
+        <tr>
+            <th class="dataFieldTable" id="dataFieldTableHeadInformation" colspan="4">Information about the resolution</th>
+        </tr>
+        <tr>
+            <td class="dataFieldTable" id="dataFieldTableInformation" colspan="4"></td>
+        </tr>
+
+    </table>
+</section>
+<section>
+    <div class="margin-details-worldmap"></div>
+    <h2>VISUALISATION OF VOTING THROUGH THE WORLD</h2>
+    <div id="map-container">
+        <div id="map"></div>
+    </div>
+    <div id="disputedTerritories-container">
+        <div id="disputedTerritories"></div>
+        <div class="disputedTerritories-text-container">
+            <h3 class="disputedTerritories-Heading">DISPUTED TERRITORIES WORLDWIDE</h3>
+
+            <h4>JAMMU & KASHMIR <span class="flag">🇮🇳 & 🇵🇰</span></h4>
+            <p class ="disputedTerritories-Text">Jammu and Kashmir, a region in northern India, is hotly disputed between India and Pakistan, fueling ongoing tensions.</p>
+            <p class ="disputedTerritories-Link-Text" ><a href="https://en.wikipedia.org/wiki/Kashmir_conflict" target="_blank" rel="noopener" class="disputedTerritories-link">Click</a> for more information about the disputed Territory.</p>
+
+            <h4>ARUNACHAL PRADESH <span class="flag">🇮🇳 & 🇨🇳</span></h4>
+            <p class ="disputedTerritories-Text">Arunachal Pradesh, located in northeastern India, is a region of territorial dispute between India and China, contributing to regional tensions.</p>
+
+            <h4>ABYEI REGION <span class="flag">🇸🇩 & 🇸🇸</span></h4>
+            <p class ="disputedTerritories-Text">Abyei, a region located on the border between Sudan and South Sudan, is a highly contested area due to its significant oil reserves and ethnic complexities, making it a focal point of conflict between the two nations.</p>
+            <p class ="disputedTerritories-Link-Text" ><a href="https://en.wikipedia.org/wiki/Abyei_border_conflict_(2022%E2%80%93present)" target="_blank" class="disputedTerritories-link">Click</a> for more information about the disputed Territory.</p>
+
+            <h4>KURIL ISLANDS <span class="flag">🇯🇵 & 🇷🇺</span></h4>
+            <p class ="disputedTerritories-Text">The Kuril Islands, particularly Iturup, are a contested territory between Japan and Russia. This dispute originated from the unresolved post-World War II tensions and remains a significant point of contention between the two nations.</p>
+            <p class ="disputedTerritories-Link-Text" ><a href="https://en.wikipedia.org/wiki/Kuril_Islands_dispute" target="_blank" rel="noopener" class="disputedTerritories-link">Click</a> for more information about the disputed Territory.</p>
+
+            <h4>PALESTINE & GAZA STRIP <span class="flag">🇵🇸 & 🇮🇱</span></h4>
+            <p class ="disputedTerritories-Text">Palestine and Gaza Strip face Israel-Palestinian conflicts over history, religion, and territory, requiring diplomatic solutions.</p>
+            <p class ="disputedTerritories-Link-Text" ><a href="https://en.wikipedia.org/wiki/Israeli-occupied_territories" target="_blank" rel="noopener" class="disputedTerritories-link">Click</a> for more information about the disputed Territory.</p>
+        </div>
+    </div>
+    <div class="legend-container">
+        <h3>LEGEND</h3>
+        <div class="legend-items">
+            <p><span class="color-box green"></span>= YES</p>
+            <p><span class="color-box red"></span>= NO</p>
+            <p><span class="color-box grey"></span>= ABSENT</p>
+            <p><span class="color-box yellow"></span>= NOT VOTED</p>
+        </div>
+    </div>
+</section>
+<div class="margin-worldmap-oversea-table"></div>
+<section>
+    <form id="toggleForm" onsubmit="toggleTable_Oversea()">
+    </form>
+    <section class="toggle-section">
+        <label class="table-all-header" onclick="toggleTable_Oversea()">
+            NON-SELF-GOVERNING TERRITORIES AND THE ASSOCIATED SUPERORDINATE COUNTRIES<span id="ToggleArrowOversea" class="arrow">&#9658;</span>
+        </label>
+        <h3 class ="disclaimer-territories-Heading">PLEASE NOTE THE FOLLOWING INFORMATION</h3>
+        <p class="disclaimer-territories">The countries presented in this Worldmap include overseas territories, unrecognized UN countries, and other similar entities. It's important to note that their status may vary and may not be universally recognized. This list is provided for informational purposes only and does not imply any political stance or endorsement of their status by the author or organization. For accurate and up-to-date information on international recognition and territorial status, please refer to official government sources and international organizations.</p>
+        <table id="toggleTableOversea" class="table-oversea" aria-hidden="true">
+            <tr>
+                <th> NON-GOVERNING-TERRITORY </th>
+                <th> SUPERORDINATE COUNTRY </th>
+            </tr>
+            <tr>
+                <td class="text-oversea">American Samoa <span class="flag">🇦🇸</span></td>
+                <td class="text-oversea">United States of America <span class="flag">🇺🇸</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Anguilla <span class="flag">🇦🇮</span></td>
+                <td class="text-oversea">United Kingdom <span class="flag">🇬🇧</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Aruba <span class="flag">🇦🇼</span></td>
+                <td class="text-oversea">Netherlands <span class="flag">🇳🇱</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Azores <span class="flag">🇵🇹</span></td>
+                <td class="text-oversea">Portugal <span class="flag">🇵🇹</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Bermuda <span class="flag">🇧🇲</span></td>
+                <td class="text-oversea">United Kingdom <span class="flag">🇬🇧</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">British Virgin Islands <span class="flag">🇻🇬</span></td>
+                <td class="text-oversea">United Kingdom <span class="flag">🇬🇧</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Cayman Islands <span class="flag">🇰🇾</span></td>
+                <td class="text-oversea">United Kingdom <span class="flag">🇬🇧</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Cocos Islands <span class="flag">🇨🇨</span></td>
+                <td class="text-oversea">Australia <span class="flag">🇦🇺</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Caribbean Netherlands <span class="flag">🇧🇶</span></td>
+                <td class="text-oversea">Netherlands <span class="flag">🇳🇱</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Curaçao <span class="flag">🇨🇼</span></td>
+                <td class="text-oversea">Netherlands <span class="flag">🇳🇱</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Faroe Islands <span class="flag">🇫🇴</span></td>
+                <td class="text-oversea">Denmark <span class="flag">🇩🇰</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">French Guiana <span class="flag">🇬🇫</span></td>
+                <td class="text-oversea">France <span class="flag">🇫🇷</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">French Polynesia <span class="flag">🇵🇫</span></td>
+                <td class="text-oversea">France <span class="flag">🇫🇷</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">French Southern and Antarctic Lands <span class="flag">🇹🇫</span></td>
+                <td class="text-oversea">France <span class="flag">🇫🇷</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Falkland Islands (Malvinas) <span class="flag">🇫🇰</span></td>
+                <td class="text-oversea">United Kingdom <span class="flag">🇬🇧</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Gibraltar <span class="flag">🇬🇮</span></td>
+                <td class="text-oversea">United Kingdom <span class="flag">🇬🇧</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Greenland <span class="flag">🇬🇱</span></td>
+                <td class="text-oversea">Denmark <span class="flag">🇩🇰</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Guadeloupe <span class="flag">🇬🇵</span></td>
+                <td class="text-oversea">France <span class="flag">🇫🇷</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Guam <span class="flag">🇬🇺</span></td>
+                <td class="text-oversea">United States of America <span class="flag">🇺🇸</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Guernsey <span class="flag">🇬🇬</span></td>
+                <td class="text-oversea">United Kingdom <span class="flag">🇬🇧</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Heard Island and McDonald Islands <span class="flag">🇭🇲</span></td>
+                <td class="text-oversea">United Kingdom <span class="flag">🇬🇧</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Hong Kong <span class="flag">🇭🇰</span></td>
+                <td class="text-oversea">China <span class="flag">🇨🇳</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Isle of Man <span class="flag">🇮🇲</span></td>
+                <td class="text-oversea">United Kingdom <span class="flag">🇬🇧</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Jan Mayen and Svalbad <span class="flag">🇸🇯</span></td>
+                <td class="text-oversea">Norway <span class="flag">🇳🇴</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Jersey <span class="flag">🇯🇪</span></td>
+                <td class="text-oversea">United Kingdom <span class="flag">🇬🇧</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Kosovo <span class="flag">🇽🇰</span></td>
+                <td class="text-oversea">Serbia <span class="flag">🇷🇸</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">La Réunion <span class="flag">🇷🇪</span></td>
+                <td class="text-oversea">France <span class="flag">🇫🇷</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Madeira <span class="flag">🇵🇹</span></td>
+                <td class="text-oversea">Portugal <span class="flag">🇵🇹</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Martinique <span class="flag">🇲🇶</span></td>
+                <td class="text-oversea">France <span class="flag">🇫🇷</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Mayotte <span class="flag">🇾🇹</span></td>
+                <td class="text-oversea">France <span class="flag">🇫🇷</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Montserrat <span class="flag">🇲🇸</span></td>
+                <td class="text-oversea">United Kingdom <span class="flag">🇬🇧</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">New Caledonia <span class="flag">🇳🇨</span></td>
+                <td class="text-oversea">France <span class="flag">🇫🇷</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Niue <span class="flag">🇳🇺</span></td>
+                <td class="text-oversea">New Zealand <span class="flag">🇳🇿</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Norfolk Island <span class="flag">🇳🇫</span></td>
+                <td class="text-oversea">Australia <span class="flag">🇦🇺</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Northern Mariana Islands <span class="flag">🇲🇵</span></td>
+                <td class="text-oversea">United States of America <span class="flag">🇺🇸</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Pitcairn Islands <span class="flag">🇵🇳</span></td>
+                <td class="text-oversea">United Kingdom <span class="flag">🇬🇧</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Puerto Rico <span class="flag">🇵🇷</span></td>
+                <td class="text-oversea">United States of America <span class="flag">🇺🇸</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Saint Barthélemy <span class="flag">🇧🇱</span></td>
+                <td class="text-oversea">France <span class="flag">🇫🇷</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Saint Helena <span class="flag">🇸🇭</span></td>
+                <td class="text-oversea">United Kingdom <span class="flag">🇬🇧</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Saint Martin <span class="flag">🇲🇫</span></td>
+                <td class="text-oversea">France <span class="flag">🇫🇷</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Saint Pierre and Miquelon <span class="flag">🇵🇲</span></td>
+                <td class="text-oversea">France <span class="flag">🇫🇷</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Sint Maarten <span class="flag">🇸🇽</span></td>
+                <td class="text-oversea">Netherlands <span class="flag">🇳🇱</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">South Georgia and the South Sandwich Islands <span class="flag">🇬🇸</span></td>
+                <td class="text-oversea">United Kingdom <span class="flag">🇬🇧</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Taiwan <span class="flag">🇹🇼</span></td>
+                <td class="text-oversea">China <span class="flag">🇨🇳</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Tokelau <span class="flag">🇹🇰</span></td>
+                <td class="text-oversea">New Zealand <span class="flag">🇳🇿</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Turks and Caicos Islands <span class="flag">🇹🇨</span></td>
+                <td class="text-oversea">United Kingdom <span class="flag">🇬🇧</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Guam <span class="flag">🇬🇺</span></td>
+                <td class="text-oversea">United States of America <span class="flag">🇺🇸</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Vatican <span class="flag">🇻🇦</span></td>
+                <td class="text-oversea">Italy <span class="flag">🇮🇹</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Wallis and Futuna <span class="flag">🇼🇫</span></td>
+                <td class="text-oversea">France <span class="flag">🇫🇷</span></td>
+            </tr>
+            <tr>
+                <td class="text-oversea">Western Sahara <span class="flag">🇪🇭</span></td>
+                <td class="text-oversea">Morocco <span class="flag">🇲🇦</span></td>
+            </tr>
+        </table>
+    </section>
+    <script src="specResolutionToggle.js"></script>
+</section>
+<section id="sectionVoteTable"></section>
+<script type="module" defer>
+    import { polyfillCountryFlagEmojis } from "https://cdn.skypack.dev/country-flag-emoji-polyfill";
+    polyfillCountryFlagEmojis();
+</script>
+<div class="margin-footer">
+</div>
+<footer>
+    <div class="footer-container">
+        <div class="copyright">
+            &copy; 2023 United Nations Resolution Tracker. All rights reserved.
+        </div>
+        <div class="impressum-link">
+            <a href="/impressum/impressum.html">Imprint</a>
+        </div>
+    </div>
+</footer>
+<section>
+    <div id="scroll-to-top"></div>
+    <script src="../every/everyScrollToTop.js"></script>
+</section>
+<script>
+    //Dropdown-Button befüllen
+    fetch('/specresolution/title')
+        .then(response => response.json())
+        .then(resolutiontitle => {
+            const dropdownOptionsButton = document.getElementById('dropdownOptions');
+            resolutiontitle.forEach(resolution => {
+                // console.log(resolution.title);
+                const dropdownOption = document.createElement('a');
+                dropdownOption.textContent = `${resolution.title}`;
+                dropdownOptionsButton.appendChild(dropdownOption);
+            });
+        })
+        .catch(error => console.error('Fehler:', error));
+</script>
+</body>
+</html>
+

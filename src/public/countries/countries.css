@@ -1,0 +1,150 @@
+
+#FilterContainer {
+    padding-top: 20px;
+}
+
+#filterHeading {
+    color: #f0f7fc;
+    letter-spacing: 2px;
+}
+
+#filterSection select {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-color: #fdfdfe;
+    cursor: pointer;
+}
+
+#filterSection input {
+    width: 46%;
+    height: 23px;
+    border-color: #fdfdfe;
+}
+
+#filterSection button.wide-button {
+    width: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 30px;
+    background-color: rgb(83, 86, 88);
+    color: #f0f7fc;
+    /*font-weight: bold;*/
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#filterSection {
+    display: none;
+}
+#filterSection.visible {
+    display: flex;
+    width: 100%;
+}
+
+.filterFieldset {
+    width: 24%;
+    border-color: #f0f7fc;
+}
+
+#filterSection.visible + .table-history-un-HD .arrow,
+#imagesTableHistory.visible + .table-history-un-HD .arrow {
+    transform: rotate(90deg);
+}
+
+.table-filter {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #3d77aa;
+    color: #f0f7fc;
+    letter-spacing: 2px;
+    font-family: 'Arial', sans-serif;
+}
+
+.filter-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.button-row {
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+#noValidValueText {
+    color: #3d76aa;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.information-Countries {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 180%;
+    color: black;
+    font-family: 'Arial', sans-serif;
+}
+
+.continentHeader {
+    text-align: center;
+    font-size: 180%;
+    color: grey;
+}
+
+.continentTable {
+    border-collapse: collapse;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.resolutionTable-header {
+    color: white;
+    font-family: 'Calibri', sans-serif;
+    font-size: 125%;
+    padding-left: 1%;
+    background-color: #004E8F;
+    border: 1px solid #dddddd;
+}
+
+#tcCountry {min-width: 94px; width: 19%; text-align: left;}
+#tcCapitalCity {min-width: 100px; width: 15%; text-align: left;}
+#tcTypeOfGovernment {min-width: 100px; width: 18%; text-align: left;}
+#tcPopulation {min-width: 110px; width: 10%; text-align: center;}
+#tcGDP, #tcArea {min-width: 75px; width: 7%; text-align: center;}
+#tcYes {min-width: 30px; width: 4%; text-align: center;}
+#tcNo {min-width: 25px; width: 4%; text-align: center;}
+#tcAbsent {min-width: 50px; width: 5%; text-align: center;}
+#tcNotVoted {min-width: 60px; width: 5%; text-align: center;}
+.continentTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.continentTable .tableRow:hover {
+    background-color: rgba(0, 78, 143, 0.5);
+}
+
+.continentTable tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+.continentTable th, .continentTable td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#continentTableNorthAmerica a, #continentTableSouthAmerica a, #continentTableEurope a,
+#continentTableAfrica a, #continentTableAsia a, #continentTableOceania a {
+    color: black;
+}
+
+.table-link {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.8%;
+}

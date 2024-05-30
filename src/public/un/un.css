@@ -1,0 +1,121 @@
+.images-about-un,
+.images-history-un,
+.images-charter-un,
+.images-secretariat-un,
+.images-general-un,
+.images-security-un,
+.images-veto-power-un {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.images-about-un td,
+.images-history-un td,
+.images-charter-un td,
+.images-secretariat-un td,
+.images-general-un td,
+.images-veto-power-un td{
+    width: 30%;
+    padding: 10px;
+}
+
+.table-image-sf1945,.table-image-logo1945,.table-image-1stgeneral,
+.table-image-1st-un-1946, .table-image-harry-truman-1945, .table-image-ratification,
+.table-image-secretariat-logo, .table-image-secretariat-second, .table-image-secretariat-current,
+.table-image-general-assembly, .table-image-votation-ES-11-3, .table-image-general-assembly-presidents,
+.table-image-veto, .table-image-veto-power-statistic {
+    width: 100%;
+    height: 20%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 1%;
+    text-align: center;
+}
+
+.table-image-charter {
+    width: 30%;
+    height: 30%;
+    display: block;
+    margin: auto;
+}
+
+.text-security-un {
+    white-space: unset;
+}
+
+.images-security-un td {
+    width: 20%;
+    padding: 10px;
+}
+
+.table-image-security-usa,.table-image-security-rus,
+.table-image-security-vrc,.table-image-security-fra,
+.table-image-security-gb {
+    width: 90%;
+    height: 25%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 1%;
+    background-color: transparent;
+    text-align: center;
+}
+
+.figcaption-charter-un {
+    text-align: center;
+    margin-top: 1%;
+    word-wrap: break-word;
+    font-family: 'arial', sans-serif;
+    font-size: 75%;
+}
+
+.figcaption-security-un {
+    text-align: left;
+    margin-top: 1%;
+    font-family: 'arial', sans-serif;
+    font-size: 75%;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.figcaption-security-un-format {
+    text-align: left;
+    margin-top: 12%;
+    font-family: 'arial', sans-serif;
+    font-size: 75%;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#toggleTableAbout, #imagesTableAbout {
+    display: table;
+}
+
+#toggleTableAbout.visible, #imagesTableAbout.visible {
+    display: none;
+}
+
+#toggleTableHistory,#imagesTableHistory,
+#toggleTableCharter,#imagesTableCharter,
+#toggleTableSecretariat,#imagesTableSecretariat,
+#toggleTableGeneralAssembly, #imagesTableGeneralAssembly,
+#toggleTableGeneralResolutions,#toggleTableSecurityCouncil,
+#imagesTableSecurityCoucil,#h2SecurityCouncil,
+#toggleTableVetoPower,#imagesTableVetoPower,
+#toggleTableEconomicCouncil,
+#toggleTableTrusteeshipCouncil,
+#toggleTableInternationalCourt,
+#toggleTableSpecial {
+    display: none;
+}
+
+#toggleTableHistory.visible,#imagesTableHistory.visible,
+#toggleTableCharter.visible,#imagesTableCharter.visible,
+#toggleTableSecretariat.visible,#imagesTableSecretariat.visible,
+#toggleTableGeneralAssembly.visible,#imagesTableGeneralAssembly.visible,
+#toggleTableGeneralResolutions.visible,
+#toggleTableSecurityCouncil.visible,#imagesTableSecurityCoucil.visible, #h2SecurityCouncil.visible,
+#toggleTableVetoPower.visible,#imagesTableVetoPower.visible,
+#toggleTableEconomicCouncil.visible,
+#toggleTableTrusteeshipCouncil.visible,
+#toggleTableInternationalCourt.visible,
+#toggleTableSpecial.visible {
+    display: table;
+}

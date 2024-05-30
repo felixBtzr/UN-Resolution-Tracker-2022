@@ -1,0 +1,104 @@
+.margin-top-header-index {
+    padding-top: 1%;
+}
+
+.welcomeText{
+    padding-top: 1%;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Calibri', sans-serif;
+    font-size: 110%;
+}
+
+.welcomeText p {
+    color: rgb(1, 2, 16);
+}
+
+.DataInfoText {
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 1%;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Calibri', sans-serif;
+    font-size: 100%;
+}
+
+.DataInfoText p {
+    padding-bottom: 1%;
+    color: rgb(100, 30, 30);
+}
+
+.imagesIndex {
+    width: 50%;
+    height: 28.125%;
+    padding-bottom: 8%;
+    float: right;
+}
+
+#imagesIndexAllgresolution, #imagesIndexAlliances, #imagesIndexVotingstatistics {
+    padding-right: 4%;
+    float: right;
+}
+
+#imagesIndexUn, #imagesIndexCountries {
+    padding-left: 4%;
+    float: left;
+}
+
+.teaserContainer {
+    position: relative;
+    padding-left: 4%;
+    width: 105%;
+}
+
+.teaserTextBoxleft {
+    position: absolute;
+    transform: translate(0%, 25%);
+    padding: 2% 1%;
+    margin-top: 3%;
+    background-color: rgb(209, 225, 238);
+    box-shadow: 0 0 10px black;
+    max-width: 50%;
+    border-radius: 3px;
+}
+
+.teaserTextBoxright {
+    position: absolute;
+    transform: translate(60%, 25%);
+    background-color: rgb(209, 225, 238);
+    box-shadow: 0 0 10px black;
+    padding: 2% 1%;
+    margin-top: 3%;
+    max-width: 50%;
+    border-radius: 3px;
+}
+
+.teaserCaption {
+    font-weight: bold;
+    color: black;
+    font-size: 180%;
+    text-align: center;
+}
+
+.teaserContent, .teaserLink {
+    color: black;
+    font-size: 100%;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.teaserLink {
+    color: #004E8F;
+    font-weight: bold;
+}
+
+.teaserLink:hover {
+    text-decoration: underline;
+    color: rgba(0, 78, 143, 0.78);
+}
+
+.teaserLink-a {
+    text-decoration: none;
+    color: inherit;
+}

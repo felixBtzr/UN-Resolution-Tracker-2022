@@ -1,0 +1,33 @@
+.information-impressum {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 180%;
+    color: black;
+    font-family: 'Arial', sans-serif;
+}
+
+#tdJA, #tdLP, #tdCK, #tdFB {
+    width: 25%;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 95%;
+}
+
+#impressumContent {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 95%;
+}
+
+#pCopyrights, #pDisclaimer {
+    min-width: 662px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 95%;
+}
+
+.margin-footer-impressum {
+    margin-top: 7.5%;
+}

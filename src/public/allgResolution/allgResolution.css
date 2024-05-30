@@ -1,0 +1,88 @@
+.margin-text-resolution, .margin-resolution-table {
+    margin-top: 1%;
+}
+
+.information-resolution {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 180%;
+    color: black;
+    font-family: 'Arial', sans-serif;
+}
+
+.text-what-resolution {
+    font-size: 100%;
+    color:black;
+    font-family: 'Arial', sans-serif;
+    text-align: justify;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 95%;
+}
+
+.text-what-resolution-header {
+    opacity: 0.75;
+    color: black;
+    font-family: 'Arial', sans-serif;
+    font-size: 125%;
+    padding-left: 1%;
+}
+
+.resolutionTable {
+    border-collapse: collapse;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.resolutionTable-header {
+    color: white;
+    font-family: 'Calibri', sans-serif;
+    font-size: 125%;
+    padding-left: 1%;
+    background-color: #004E8F;
+    border: 1px solid #dddddd;
+}
+
+.resolutionTable th:nth-child(1),
+.resolutionTable td:nth-child(1) {
+    width: 100px;
+}
+
+.resolutionTable th:nth-child(2),
+.resolutionTable td:nth-child(2) {
+    width: 550px;
+}
+
+.resolutionTable th:nth-child(3),
+.resolutionTable td:nth-child(3) {
+    width: 100px;
+}
+
+.resolutionTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.resolutionTable .tableRow:hover {
+    background-color: rgba(0, 78, 143, 0.5);
+    cursor: pointer;
+}
+
+.resolutionTable tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.resolutionTable th, .resolutionTable td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#tableindex a {
+    color: black;
+}
+
+.table-link {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.8%;
+}

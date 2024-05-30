@@ -1,0 +1,353 @@
+.margin-header-details, .margin-details-worldmap,
+.margin-worldmap-oversea-table, .margin-worldmap-worldtable {
+    margin-top: 2%;
+}
+
+.informationResolution-Heading {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 180%;
+    color: black;
+    font-family: 'Arial', sans-serif;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    margin-top: -25%;
+}
+
+.dropbtn {
+    background-color: black;
+    opacity: 0.75;
+    color: white;
+    width: 143%;
+    padding: 1%;
+    font-size: 125%;
+    border: none;
+    cursor: pointer;
+    min-width: 662px;
+    position: relative;
+}
+
+.dropbtn::after {
+    content: '\25BC';
+    font-size: 100%;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 143%;
+    max-height: 400%;
+    overflow-y: auto;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Arial', sans-serif;
+}
+
+.dropdown-content a:hover {
+        background-color: #ddd;
+}
+
+.dropdown.show .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: grey;
+    opacity: 0.5;
+}
+
+#dataField {
+    background-color: rgba(0, 78, 143, 0.75);
+    color: black;
+    width: 143%;
+    padding: 0.5%;
+    font-size: 125%;
+    text-align: center;
+    border: none;
+    min-width: 662px;
+    position: relative;
+}
+
+.dataFieldTable {
+    width: 25%;
+    padding-top: 1%;
+    text-align: center;
+    border-left: 1px solid rgba(0, 78, 143, 0.75);
+}
+
+#dataFieldTableAdopted, #dataFieldTableResNr, #dataFieldTableTags, #dataFieldTableLink {
+    padding-bottom: 1%;
+    font-family: 'Arial', sans-serif;
+}
+
+#dataFieldTableSummary, #dataFieldTableAuthors, #dataFieldTableHeadInformation, #dataFieldTableInformation {
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+#dataFieldTableHeadAuthors{
+    text-align: left; padding-left: 7.6%
+}
+
+#dataFieldSummaryCategories {
+    display: flex;
+    justify-content: space-between;
+    font-size: 100%;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+#dataFieldSummaryNumbers {
+    text-align: right;
+}
+
+#dataFieldTableAdopted {color: green;font-weight: bold}
+#votedWithYesResult {padding-right: 5%;font-weight: bold; color: green;}
+#votedWithNoResult{padding-right: 5%;font-weight: bold; color: red;}
+#votedWithAbsentResult{padding-right: 5%;font-weight: bold; color: dimgrey;}
+#votedWithNVResult{padding-right: 5%;font-weight: bold; color: orange;}
+
+#map-container {
+    float: left;
+    display: flex;
+    position: relative;
+    height: 90%;
+    width: 100%;
+    padding-bottom: 55%;
+    margin-left:2%;
+    z-index: 1;
+}
+
+#map {
+    position: absolute;
+    width: 60%;
+    height: 90%;
+    border: 2px solid #000000;
+}
+
+#disputedTerritories-container {
+    position: relative;
+    float: right;
+    width: 30%;
+    border: 2px solid #000000;
+    margin-top: -55%;
+    background-color: rgba(155, 145, 145, 0.06);
+    overflow: auto;
+    z-index: 1;
+}
+
+.disputedTerritories-text-container {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.disputedTerritories-Heading {
+    color: black;
+    font-weight: bold;
+    font-size: 110%;
+    margin-left: 1.5%;
+}
+
+.disputedTerritories-Text {
+    font-size: 100%;
+    color: black;
+    text-align: justify;
+    margin-left: 1.5%;
+}
+
+.disputedTerritories-Link-Text {
+    font-size: 100%;
+    color: black;
+    font-style: italic;
+    margin-left: 1.5%;
+}
+
+.disputedTerritories-link {
+    color: blue;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.disputedTerritories-link:hover {
+    text-decoration: underline;
+}
+
+.legend-container {
+    margin-left: 2%;
+    flex-wrap: nowrap;
+}
+
+.legend-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.legend-items p {
+    margin-right: 2%;
+    font-size: 80%;
+}
+
+.color-box {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#voteHeaderLabel {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-left: 44%;
+    width: 98%;
+    cursor: pointer;
+}
+
+.color-box.green {background-color: green;}
+.color-box.red {background-color: red;}
+.color-box.grey {background-color: dimgrey;}
+.color-box.yellow {background-color: orange;}
+
+.countriesTableCenter {text-align: center;}
+.countriesTableLeft {text-align: left;}
+
+#toggleTableOversea {
+    display: none;
+}
+
+#toggleTableOversea.visible {
+    display: table;
+}
+
+#toggleTableOversea.visible.arrow {
+    transform: rotate(90deg);
+}
+
+.disclaimer-territories {
+    text-align: center;
+    font-style: italic;
+    font-size: 105%;
+    color: black;
+    font-family: 'Arial', sans-serif;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.disclaimer-territories-Heading {
+    text-align: center;
+    font-size: 140%;
+    color: black;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: -0.5%;
+}
+
+.table-oversea {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #dddddd;
+}
+
+.table-oversea th:nth-child(1),
+.table-oversea td:nth-child(1) {
+    width: 300px;
+}
+
+.table-oversea th:nth-child(2),
+.table-oversea td:nth-child(2) {
+    width: 300px;
+}
+
+.table-oversea tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-oversea  tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.table-oversea  th, .table-oversea td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+}
+
+.table-oversea  th {
+    background-color: #004E8F;
+    opacity: 0.85;
+    color: white;
+}
+
+.text-oversea {
+    width: 99%;
+    overflow: hidden;
+    margin-top: 1.5%;
+    margin-bottom: 0.5%;
+    margin-left: 0.5%;
+}
+
+#countriesTable {
+    border-collapse: collapse;
+    width: 85%;
+    margin: 0 auto;
+}
+
+#countriesTable th:nth-child(1),
+#countriesTable td:nth-child(1) {
+    width: 400px;
+}
+
+#countriesTable th:nth-child(2),
+#countriesTable td:nth-child(2) {
+    width: 150px;
+}
+
+#countriesTable th:nth-child(3),
+#countriesTable td:nth-child(3) {
+    width: 200px;
+}
+
+#countriesTable th:nth-child(4),
+#countriesTable td:nth-child(4) {
+    width: 300px;
+}
+
+#countriesTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#countriesTable tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+#countriesTable th, #countriesTable td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#countriesTable th {
+    background-color: #004E8F;
+    opacity: 0.85;
+    color: white;
+}

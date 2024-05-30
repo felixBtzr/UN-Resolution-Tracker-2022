@@ -1,0 +1,274 @@
+.margin-filter, .margin-header-details {
+    margin-top: 4%;
+}
+
+.information-voting-statistics {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 180%;
+    color: black;
+    font-family: 'Arial', sans-serif;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.newButton {
+    width: 15%;
+    padding: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 100%;
+    background-color: rgba(0, 78, 143, 0.75);
+    color: #f0f7fc;
+    letter-spacing: 2px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.newButton:hover {
+    background-color: rgba(0, 78, 143, 0.75);
+    opacity: 0.5;
+}
+
+#fullResultsDiv {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 1%;
+    font-size: 100%;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    width: 100%;
+    position: relative;
+}
+
+#frameworkTableTagResult {
+    width: 100%;
+    border: 0 solid rgba(0, 78, 143, 0.75);
+    border-collapse: collapse;
+}
+
+.dropdownOption {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.dropdownOption:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.countryInfoTable-header, .countryInfoTable-data {
+    width: 20%;
+    padding-top: 1%;
+    text-align: center;
+    border-left: 1px solid rgba(0, 78, 143, 0.75);
+}
+
+.compareTable-header {
+    width: 25%;
+    padding-top: 1%;
+    text-align: center;
+}
+
+#country1Name, #country2Name {
+    background-color: rgba(0, 78, 143, 0.75);
+    color: black;
+    font-family: 'Arial', sans-serif;
+    padding: 0.5%;
+    font-size: 180%;
+    text-align: center;
+    border: none;
+    min-width: 200px;
+    position: relative;
+}
+
+.tagNameColumn {
+    color: black;
+    font-family: 'Arial', sans-serif;
+    padding: 0.5%;
+    font-size: 180%;
+    text-align: center;
+    border: none;
+    position: relative;
+}
+
+.countryInfoTable-data {
+    padding-bottom: 1%;
+    font-family: 'Arial', sans-serif;
+}
+
+.dataFieldTable th,
+.dataFieldTable td {
+    width: 20%;
+}
+
+#dataFieldContinent,#dataFieldCapitalCity,
+#dataFieldSinceWhenUN,#dataFieldFlag,#dataFieldAlliance {
+    text-align: left;
+    font-size: 120%;
+    width: 10%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    border-left: 1px solid rgba(0, 78, 143, 0.75);
+}
+
+#tableFieldPiechart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tableFieldPiechartDIV {
+    padding-left: 10%;
+    width: 75%;
+    height: 75%;
+}
+
+#tableFieldBarchartTag {
+    height: 100%;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50%;
+}
+
+#tableFieldBarchartTagDIV {
+    width: 100%;
+    margin-top: auto;
+}
+
+#tableFieldTagText {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#tableFieldTagTextDIV {
+    width: 80%;
+    text-align: center;
+}
+
+#countryComparesField {
+    color: black;
+    width: 143%;
+    padding: 1%;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-size: 180%;
+    text-align: center;
+    border: none;
+    cursor: default;
+    min-width: 200px;
+    position: relative;
+}
+
+.flag {
+    font-size: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Twemoji Country Flags", "Helvetica", "Comic Sans", serif;
+    line-height: 50%;
+}
+
+.blueCircle {
+    width: 50px;
+    height: 50px;
+    color: #f0f7fc;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+#blueCircleUkraine {background: linear-gradient(to bottom, #00539f 50%, #ffd500 50%);}
+
+#blueCircleRussia {background: linear-gradient(to bottom, #fff 0%, #fff 33.33%, #0033A0 33.33%, #0033A0 66.66%, #d52b1e 66.66%, #d52b1e 100%);}
+#blueCircleIsrael {background: linear-gradient(to bottom, #239e40 0%, #229b40 33.33%, #f0f7fc 33.33%, #f0f7fc 66.66%, #C51E1EFF 66.66%, #C51E1EFF 100%);}
+#blueCircleAfghanistan {background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 33.33%, #c51e1e 33.33%, #c51e1e 66.66%, #239e40 0%, #239e40 0%);}
+
+
+.blueCircle:hover {
+    background-color: rgba(0, 78, 143, 0.75);
+    opacity: 0.5;
+}
+
+.dropdownCountryDiv {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-top: -25%;
+}
+
+.dropbtn {
+    background-color: black;
+    opacity: 0.75;
+    color: white;
+    padding: 1%;
+    font-size: 100%;
+    border: none;
+    cursor: pointer;
+
+    width: 100%;
+    position: relative;
+}
+
+.dropbtn::after {
+    content: '\25BC';
+    font-size: 100%;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#dropdownCountry1Content, #dropdownCountry2Content {
+    width: 100%;
+}
+
+#dropdownTagContent {
+    width: 60%;
+}
+
+.dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+.dropdownContent a:hover {
+    background-color: #ddd;
+}
+
+.dropdownCountryDiv.show .dropdownContent, .dropdownTagDiv.show .dropdownContent {
+    display: block;
+}
+
+.dropdownCountryDiv:hover .dropbtn, .dropdownTagDiv:hover .dropbtn {
+    background-color: grey;
+    opacity: 0.5;
+}
+
+#tag-buttons-caption {
+    visibility: hidden;
+}

@@ -1,0 +1,122 @@
+.informationDropdownContent {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.suspended {
+    font-weight: bold;
+    color: red;
+}
+
+.dropdownInformation:hover .informationDropdownContent {
+    display: block;
+}
+
+.images-NATO,
+.images-EU,
+.images-AU,
+.images-AL,
+.images-SADC,
+.images-UNASUR,
+.images-CELAC,
+.images-ASEAN,
+.images-SCO,
+.images-PIF,
+.images-G7,
+.images-G20{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.images-NATO td,
+.images-EU td,
+.images-AU td,
+.images-AL td,
+.images-SADC td,
+.images-UNASUR td,
+.images-CELAC td,
+.images-ASEAN td,
+.images-SCO td,
+.images-PIF td,
+.images-G7 td,
+.images-G20 td {
+    width: 30%;
+    padding: 10px;
+}
+
+.table-image-NATO-Logo,.table-image-NATO-Map,.table-image-NATO-2022,
+.table-image-EU-Logo,.table-image-EU-Map,.table-image-EU-Kommission,
+.table-image-AU-Map,.table-image-AU-Logo,.table-image-AU-Kommission,
+.table-image-AL-Map,.table-image-AL-Logo,.table-image-AL-Kommission,
+.table-image-SADC-Members,.table-image-SADC-Logo,.table-image-SADC-Kommission,
+.table-image-ECOWAS-Members,.table-image-ECOWAS-Logo,.table-image-ECOWAS-Kommission,
+.table-image-UNASUR-Members,.table-image-UNASUR-Logo,.table-image-UNASUR-Kommission,
+.table-image-CELAC-Members,.table-image-CELAC-Logo,.table-image-CELAC-Kommission,
+.table-image-ASEAN-Members,.table-image-ASEAN-Logo,.table-image-ASEAN-Kommission,
+.table-image-SCO-Members,.table-image-SCO-Logo,.table-image-SCO-Kommission,
+.table-image-PIF-Members,.table-image-PIF-Logo,.table-image-PIF-Kommission,
+.table-image-G7-Members,.table-image-G7-Logo,.table-image-G7-Kommission,
+.table-image-G20-Members,.table-image-G20-Logo,.table-image-G20-Kommission{
+    width: 100%;
+    height: 20%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 1%;
+    text-align: center;
+}
+
+#toggleTableNATO,#toggleTableNATO2,#toggleTableNATO3,#toggleTableNATO4,#imagesTableNATO {
+    display: table;
+}
+
+#toggleTableNATO.visible,#toggleTableNATO2.visible, #toggleTableNATO3.visible,
+#toggleTableNATO4.visible, #imagesTableNATO.visible {
+    display: none;
+}
+
+#toggleTableEU,#toggleTableEU2,#toggleTableEU3,#toggleTableEU4,#imagesTableEU,
+#toggleTableAU,#toggleTableAU1,#toggleTableAU2,#toggleTableAU3,#toggleTableAU4,#toggleTableAU5,#imagesTableAU,
+#toggleTableAL,#toggleTableAL1,#toggleTableAL2,#toggleTableAL3,#toggleTableAL4,#toggleTableAL5,#imagesTableAL,
+#toggleTableSADC,#toggleTableSADC1,#toggleTableSADC2,#toggleTableSADC3,#imagesTableSADC,
+#toggleTableECOWAS, #toggleTableECOWAS1,#toggleTableECOWAS2,#toggleTableECOWAS3,#toggleTableECOWAS4,#imagesTableECOWAS,
+#toggleTableUNASUR,#toggleTableUNASUR1,#toggleTableUNASUR2,
+#toggleTableUNASUR3,#toggleTableUNASUR4,#toggleTableUNASUR5,#imagesTableUNASUR,
+#toggleTableCELAC,#toggleTableCELAC1,#toggleTableCELAC2,#toggleTableCELAC3,#imagesTableCELAC,
+#toggleTableASEAN,#toggleTableASEAN1,#toggleTableASEAN2,#toggleTableASEAN3,#toggleTableASEAN4, #imagesTableASEAN,
+#toggleTableSCO,#toggleTableSCO1,#toggleTableSCO2,#toggleTableSCO3,#imagesTableSCO,
+#toggleTablePIF,#toggleTablePIF1,#toggleTablePIF2,#toggleTablePIF3,#imagesTablePIF,
+#toggleTableG7,#toggleTableG71,#toggleTableG72,#toggleTableG73,#imagesTableG7,
+#toggleTableG20,#toggleTableG201,#toggleTableG202,#toggleTableG203,#imagesTableG20 {
+    display: none;
+}
+
+#toggleTableEU.visible,#toggleTableEU2.visible,#toggleTableEU3.visible,#toggleTableEU4.visible, #imagesTableEU.visible,
+#toggleTableAU.visible,#toggleTableAU1.visible,
+#toggleTableAU2.visible,#toggleTableAU3.visible,#toggleTableAU4.visible,
+#toggleTableAU5.visible, #imagesTableAU.visible,
+#toggleTableAL.visible,#toggleTableAL1.visible,#toggleTableAL2.visible
+,#toggleTableAL3.visible,#toggleTableAL4.visible, #toggleTableAL5.visible,
+#imagesTableAL.visible,
+#toggleTableSADC.visible,#toggleTableSADC1.visible,#toggleTableSADC2.visible,
+#toggleTableSADC3.visible, #imagesTableSADC.visible,
+#toggleTableECOWAS.visible,#toggleTableECOWAS1.visible,#toggleTableECOWAS2.visible,
+#toggleTableECOWAS3.visible,#toggleTableECOWAS4.visible, #imagesTableECOWAS.visible,
+#toggleTableUNASUR.visible,#toggleTableUNASUR1.visible,#toggleTableUNASUR2.visible,
+#toggleTableUNASUR3.visible,#toggleTableUNASUR4.visible, #toggleTableUNASUR5.visible
+,#imagesTableUNASUR.visible,
+#toggleTableCELAC.visible,#toggleTableCELAC1.visible,#toggleTableCELAC2.visible,
+#toggleTableCELAC3.visible, #imagesTableCELAC.visible,
+#toggleTableASEAN.visible,#toggleTableASEAN1.visible,#toggleTableASEAN2.visible,
+#toggleTableASEAN3.visible,#toggleTableASEAN4.visible, #imagesTableASEAN.visible,
+#toggleTableSCO.visible,#toggleTableSCO1.visible,#toggleTableSCO2.visible,
+#toggleTableSCO3.visible,#imagesTableSCO.visible,
+#toggleTablePIF.visible,#toggleTablePIF1.visible,#toggleTablePIF2.visible,
+#toggleTablePIF3.visible,#imagesTablePIF.visible,
+#toggleTableG7.visible,#toggleTableG71.visible,#toggleTableG72.visible,
+#toggleTableG73.visible,#imagesTableG7.visible,
+#toggleTableG20.visible,#toggleTableG201.visible, #toggleTableG202.visible,
+#toggleTableG203.visible,#imagesTableG20.visible {
+    display: table;
+}

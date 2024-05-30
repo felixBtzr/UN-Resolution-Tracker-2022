@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOTING STATISTICS OF UN RESOLUTIONS 2022</title>
+    <link rel="stylesheet" href="/every/main.css">
+    <link rel="stylesheet" href="/votingStatistics/votingStatistics.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <script type="text/javascript" src="chart.js"></script>
+    <script type="text/javascript" src="votingStatistics.js"></script>
+
+</head>
+<body>
+<div class="header">
+    <h1>UN RESOLUTION TRACKER 2022</h1>
+</div>
+<div>
+    <table class="headerTable" aria-hidden="true">
+        <tr>
+            <td id="headerTableValue1" class="headerTableValue"><a href="/allgResolution/allgResolution.html">RESOLUTIONS</a></td>
+            <td id="headerTableValue2" class="headerTableValue"><a href="/un/un.html">ABOUT UN</a></td>
+            <td id="headerTableValue3" class="headerTableValue"><a href="/alliances/alliances.html">ABOUT ALLIANCES</a></td>
+            <td id="headerTableValue4" class="headerTableValue"><a href="/countries/countries.html">ABOUT COUNTRIES</a></td>
+            <td id="headerTableValue5" class="headerTableValue current-page"><a href="/votingStatistics/votingStatistics.html">VOTING STATISTICS</a></td>
+        </tr>
+    </table>
+</div>
+<div id="logo">
+    <a href="../index/index.html" class="logo-link">
+        <img src="/images/un_PNG7.png" alt="">
+    </a>
+</div>
+<section>
+    <h2 class="information-voting-statistics">VOTING STATISTICS</h2>
+    <div class= "margin-top-header"></div>
+</section>
+<section class="button-container">
+    <button class="newButton" id="BtnRussiaVsUSA" onclick="populateSite('RUSSIAN FEDERATION', 'UNITED STATES', 'War');">RUSSIA VS. USA</button>
+    <button class="newButton" id="BtnIndiaVsPakistan" onclick="populateSite('INDIA', 'PAKISTAN', 'War');">INDIA VS. PAKISTAN</button>
+    <button class="newButton" id="BtnIsraelVsIran" onclick="populateSite('ISRAEL', 'IRAN', 'War');">ISRAEL VS. IRAN</button>
+    <button class="newButton" id="BtnGermanyVsChina" onclick="populateSite('GERMANY', 'CHINA', 'War');">GERMANY VS. CHINA</button>
+</section>
+
+<section>
+    <div class="margin-header-details"></div>
+    <div class="dropdownCountryDiv" id="dropdownCountry1Div">
+        <button class="dropbtn" id="dropbtnCountry1">SELECT ANOTHER COUNTRY YOU WANT TO DISPLAY</button>
+        <div class="dropdownContent" id="dropdownCountry1Content"></div>
+    </div>
+</section>
+
+<section>
+    <table class="dataFieldTable" id="frameworkTableInfo1" aria-hidden="true">
+        <tr>
+            <th id="country1Name" class="countryName" colspan="5">Rus</th>
+        </tr>
+        <tr>
+            <th scope="col" class="countryInfoTable-header">Continent</th>
+            <th scope="col" class="countryInfoTable-header">Capital City</th>
+            <th scope="col" class="countryInfoTable-header">since when in the UN</th>
+            <th scope="col" class="countryInfoTable-header">Flag</th>
+            <th scope="col" class="countryInfoTable-header">Alliance</th>
+        </tr>
+        <tr>
+            <td id="countryInfoTableContinentCountry1" class="countryInfoTable-data"></td>
+            <td id="countryInfoTableCapitalCityCountry1" class="countryInfoTable-data"></td>
+            <td id="countryInfoTableSinceWhenUNCountry1" class="countryInfoTable-data"></td>
+            <td id="countryInfoTableFlagCountry1" class="countryInfoTable-data"></td>
+            <td id="countryInfoTableAllianceCountry1" class="countryInfoTable-data"></td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <table class="" id="frameworkTableTagResult" aria-hidden="true">
+        <tr>
+            <td rowspan="3" style="width: 40%">
+                <div class="margin-header-details"></div>
+                <div class="" id="fullResultsDiv">Full voting results</div>
+            </td>
+            <td colspan="2" style="width: 60%">
+                <div class="margin-header-details"></div>
+                <div class="dropdownTagDiv" id="dropdownTagDivId">
+                    <button class="dropbtn" id="dropbtnTag">SELECT A TAG</button>
+                    <div class="dropdownContent" id="dropdownTagContent"></div>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <th id="tagNameField" class="tagNameColumn" colspan="2" style="width:60%; background-color: rgba(0, 78, 143, 0.75)"></th>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <table style="width: 100%;">
+                    <caption id="tag-buttons-caption">Tag-Button</caption>
+                    <tr>
+                        <th style="width: 25%; padding-left: 8%; padding-top: 10px"><div id="blueCircleUkraine" class="blueCircle" onclick="populateTag('Ukraine')"><div id="circleTextUkraine" class="circleText" style="height: 40px; padding-top: 17px; margin-left: 35%"></div></div></th>
+                        <th style="width: 25%; padding-left: 8%; padding-top: 10px"><div id="blueCircleRussia" class="blueCircle" onclick="populateTag('Russia')"><div id="circleTextHumanRussia" class="circleText" style=" padding-top: 17px; margin-left: 35%"></div></div></th>
+                        <th style="width: 25%; padding-left: 8%; padding-top: 10px"><div id="blueCircleIsrael" class="blueCircle" onclick="populateTag('Iran')"><div id="circleTextIran" class="circleText" style=" padding-top: 17px; margin-left: 35%"></div></div></th>
+                        <th style="width: 25%; padding-left: 8%; padding-top: 10px"><div id="blueCircleAfghanistan" class="blueCircle" onclick="populateTag('Afghanistan')"><div id="circleTextUS" class="circleText" style=" padding-top: 17px; margin-left: 35%"></div></div></th>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td id="tableFieldPiechart"><div id="tableFieldPiechartDIV"></div></td>
+
+            <td id="tableFieldBarchartTag" class="dataFieldTable3"><div id="tableFieldBarchartTagDIV"></div></td>
+            <td id="tableFieldTagText" class="dataFieldTable3"><div id="tableFieldTagTextDIV"></div></td>
+        </tr>
+    </table>
+
+</section>
+
+
+<section>
+    <div class="margin-header-details"></div>
+    <div class="dropdownCountryDiv" id="dropdownCountry2Div">
+        <button class="dropbtn" id="dropbtnCountry2">SELECT ANOTHER COUNTRY YOU WANT TO DISPLAY</button>
+        <div class="dropdownContent" id="dropdownCountry2Content"></div>
+    </div>
+</section>
+
+<section>
+    <table class="dataFieldTable" id="frameworkTableInfo2" aria-hidden="true">
+        <tr>
+            <th id="country2Name" class="countryName" colspan="5">USA</th>
+        </tr>
+        <tr>
+            <th scope="col" class="countryInfoTable-header">Continent</th>
+            <th scope="col" class="countryInfoTable-header">Capital City</th>
+            <th scope="col" class="countryInfoTable-header">since when in the UN</th>
+            <th scope="col" class="countryInfoTable-header">Flag</th>
+            <th scope="col" class="countryInfoTable-header">Alliance</th>
+        </tr>
+        <tr>
+            <td id="countryInfoTableContinentCountry2" class="countryInfoTable-data"></td>
+            <td id="countryInfoTableCapitalCityCountry2" class="countryInfoTable-data"></td>
+            <td id="countryInfoTableSinceWhenUNCountry2" class="countryInfoTable-data"></td>
+            <td id="countryInfoTableFlagCountry2" class="countryInfoTable-data"></td>
+            <td id="countryInfoTableAllianceCountry2" class="countryInfoTable-data"></td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <table id="" aria-hidden="true">
+        <tr>
+            <th class="dataFieldTable2" id="countryComparesField" colspan="4"><span id="comparisonCountry1"></span> COMPARED TO <span id="comparisonCountry2"></span></th>
+        </tr>
+        <tr>
+            <th class="compareTable-header" id="comparisonCountry1Yes">IF <span id="country1Yes"></span> "YES"</th>
+            <th class="compareTable-header" id="comparisonCountry1No">IF <span id="country1No"></span> "NO"</th>
+            <th class="compareTable-header" id="comparisonCountry1Absent">IF <span id="country1Absent"></span> "ABSENT"</th>
+            <th class="compareTable-header" id="comparisonCountry1Nv">IF <span id="country1NV"></span> "N.V."</th>
+        </tr>
+        <tr>
+            <td class="dataFieldTable" id="tableFieldComparisonYES"></td>
+            <td class="dataFieldTable" id="tableFieldComparisonNO"></td>
+            <td class="dataFieldTable" id="tableFieldComparisonABSENT"></td>
+            <td class="dataFieldTable" id="tableFieldComparisonNV"></td>
+        </tr>
+    </table>
+</section>
+
+<script type="module" defer>
+    import { polyfillCountryFlagEmojis } from "https://cdn.skypack.dev/country-flag-emoji-polyfill";
+    polyfillCountryFlagEmojis();
+</script>
+<div class="margin-footer">
+</div>
+<footer>
+    <div class="footer-container">
+        <div class="copyright">
+            &copy; 2023 United Nations Resolution Tracker. All rights reserved.
+        </div>
+        <div class="impressum-link">
+            <a href="/impressum/impressum.html">Imprint</a>
+        </div>
+    </div>
+</footer>
+<section>
+    <div id="scroll-to-top"></div>
+
+    <script src="/every/everyScrollToTop.js"></script>
+</section>
+</body>
+</html>

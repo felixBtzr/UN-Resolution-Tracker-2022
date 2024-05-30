@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFORMATION ABOUT THE COUNTRIES OF THE UNITED NATIONS</title>
+    <link rel="stylesheet" href="/every/main.css">
+    <link rel="stylesheet" href="/countries/countries.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="countries.js"></script>
+
+</head>
+<body>
+    <div class="header">
+        <h1>UN RESOLUTION TRACKER 2022</h1>
+    </div>
+    <div>
+        <table class="headerTable" aria-hidden="true">
+            <tr>
+                <td id="headerTableValue1" class="headerTableValue"><a href="../allgResolution/allgResolution.html">RESOLUTIONS</a></td>
+                <td id="headerTableValue2" class="headerTableValue"><a href="../un/un.html">ABOUT UN</a></td>
+                <td id="headerTableValue3" class="headerTableValue"><a href="../alliances/alliances.html">ABOUT ALLIANCES</a></td>
+                <td id="headerTableValue4" class="headerTableValue current-page"><a href="countries.html">ABOUT COUNTRIES</a></td>
+                <td id="headerTableValue5" class="headerTableValue"><a href="../votingStatistics/votingStatistics.html">VOTING STATISTICS</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="margin-top-header"></div>
+    <div id="logo">
+        <a href="../index/index.html" class="logo-link">
+            <img src="/images/un_PNG7.png" alt="">
+        </a>
+    </div>
+    <section>
+        <h2 class="information-Countries">THE 193 COUNTRIES OF THE UN</h2>
+        <div class= "margin-all"></div>
+    </section>
+        <section>
+            <form id="ToggleForm" onsubmit="toggleTable_Filter()">
+            </form>
+            <section id="FilterContainer">
+                <form id="FilterToggleForm" onsubmit="toggleTable_Filter()">
+                </form>
+                <section class="toggle-section" id="tableFilterSection">
+                    <label class="table-all-header" id="filterHeading" onclick="toggleTable_Filter()">
+                        FILTER <span id="ToggleArrow_Filter" class="arrow">&#9658;</span>
+                    </label>
+                    <section id="filterSection" class="table-filter">
+                        <div class="filter-row">
+                            <fieldset class="filterFieldset">
+                                <legend>Type of Government</legend>
+                                <div class="search-container">
+                                    <label for="selectTypeOfGovernment"></label><select id="selectTypeOfGovernment">
+                                        <option value="all">All</option>
+                                        <option value="Semi-Presidential Republic">Semi-Presidential Republic</option>
+                                        <option value="Socialist Republic">Socialist Republic</option>
+                                        <option value="Parliamentary Constitutional Monarchy">Parliamentary Constitutional Monarchy</option>
+                                        <option value="Constitutional Monarchy">Constitutional Monarchy</option>
+                                        <option value="Absolute Monarchy">Absolute Monarchy</option>
+                                        <option value="Single-Party Presidential Republic">Single-Party Presidential Republic</option>
+                                        <option value="Parliamentary Democracy">Parliamentary Democracy</option>
+                                        <option value="Federal Republic">Federal Republic</option>
+                                        <option value="Federal Parliamentary Republic">Federal Parliamentary Republic</option>
+                                        <option value="Presidential Republic">Presidential Republic</option>
+                                        <option value="Single-Party Socialist Republic">Single-Party Socialist Republic</option>
+                                        <option value="Parliamentary Republic">Parliamentary Republic</option>
+                                        <option value="Presidential Federal Absolute Monarchy">Presidential Federal Absolute Monarchy</option>
+                                        <option value="Theocratic Republic">Theocratic Republic</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <fieldset class="filterFieldset">
+                                <legend>Population in Million</legend>
+                                <div class="search-container">
+                                    <i class="fa fa-search"></i>
+                                    <label for="searchPopulationFrom"></label><input class="searchInput" id="searchPopulationFrom" type="text" placeholder="From">
+                                    <i class="fa fa-times"></i>
+                                    <i class="fa fa-search"></i>
+                                    <label for="searchPopulationTo"></label><input class="searchInput" id="searchPopulationTo" type="text" placeholder="To">
+                                    <i class="fa fa-times"></i>
+                                </div>
+                            </fieldset>
+                            <fieldset class="filterFieldset">
+                                <legend>GDP in Million $</legend>
+                                <div class="search-container">
+                                    <i class="fa fa-search"></i>
+                                    <label for="searchGDPFrom"></label><input class="searchInput" id="searchGDPFrom" type="text" placeholder="From">
+                                    <i class="fa fa-times"></i>
+                                    <i class="fa fa-search"></i>
+                                    <label for="searchGDPTo"></label><input class="searchInput" id="searchGDPTo" type="text" placeholder="To">
+                                    <i class="fa fa-times"></i>
+                                </div>
+                            </fieldset>
+                            <fieldset class="filterFieldset">
+                                <legend>Area in Km²</legend>
+                                <div class="searchContainer">
+                                    <i class="fa fa-search"></i>
+                                    <label for="searchAreaFrom"></label><input class="searchInput" id="searchAreaFrom" type="text" placeholder="From">
+                                    <i class="fa fa-times"></i>
+                                    <i class="fa fa-search"></i>
+                                    <label for="searchAreaTo"></label><input class="searchInput" id="searchAreaTo" type="text" placeholder="To">
+                                    <i class="fa fa-times"></i>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div>
+                            <p id="noValidValueText"></p>
+                        </div>
+
+                        <div class="button-row">
+                            <button id="applyButton" class="wide-button">
+                                <svg class="nQao3 hcDLf YgmFC" width="16" height="16" viewBox="0 0 24 24" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.215 18.336a9 9 0 112.121-2.121L23.121 21 21 23.121l-4.785-4.785zM11 17.25a6.25 6.25 0 100-12.5 6.25 6.25 0 000 12.5z" fill="currentColor"></path>
+                                </svg>
+                                APPLY FILTER
+                            </button>
+
+                            <button id="resetButton" class="wide-button">
+                                <svg class="icon--left__bgqbx SvgIcon__1H1VO" width="16" height="16" viewBox="0 0 24 24" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.586 16L8 17.414l4-4 4 4L17.414 16l-4-4 4-4L16 6.586l-4 4-4-4L6.586 8l4 4-4 4zM12 22.5C6.201 22.5 1.5 17.799 1.5 12S6.201 1.5 12 1.5 22.5 6.201 22.5 12 17.799 22.5 12 22.5z" fill="currentColor"></path>
+                                </svg>
+                                RESET FILTER
+                            </button>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </section>
+    <section id="countriesContentSection"></section>
+    <script type="module" defer>
+        import { polyfillCountryFlagEmojis } from "https://cdn.skypack.dev/country-flag-emoji-polyfill";
+        polyfillCountryFlagEmojis();
+    </script>
+<section>
+    <div id="scroll-to-top"></div>
+    <script src="../every/everyScrollToTop.js"></script>
+</section>
+    <div class="margin-footer"></div>
+    <footer>
+        <div class="footer-container">
+            <div class="copyright">
+                &copy; 2023 United Nations Resolution Tracker. All rights reserved.
+            </div>
+                <div class="impressum-link">
+                    <a href="/impressum/impressum.html">Imprint</a>
+                </div>
+        </div>
+    </footer>
+</body>
+</html>
