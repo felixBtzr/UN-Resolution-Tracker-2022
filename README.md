@@ -1,4 +1,3 @@
-[![Quality Gate Status](http://dl-sonarqube:9000/api/project_badges/measure?project=UN&metric=alert_status&token=sqb_ffcd54a09ef3d058dddfed50d2539d59f3fd8ae6)](http://dl-sonarqube:9000/dashboard?id=UN)
 # United Nations Resolution Tracker
 
 Die United Nations Resolution Tracker ist eine Webanwendung, die entwickelt wurde, um die Resolutionen der Vereinten Nationen aus dem Jahr 2022 zu verarbeiten und visuell darzustellen. Die Anwendung ermöglicht es Benutzern, Abstimmungsergebnisse anzuzeigen, eine Weltkarte basierend auf den Abstimmungen der Länder einzufärben, Informationen zu Mitgliedstaaten der UN abzurufen, Allianzen auf der Welt zu erkunden und statistische Vergleiche zwischen zwei Ländern durchzuführen.
@@ -28,13 +27,13 @@ Um die Anwendung lokal zu installieren, führen Sie die folgenden Schritte aus:
 2. Klonen Sie dieses Repository auf Ihren Computer:
 
    ```bash
-   git clone https://dl-gitlab.dacs.int/lehre/projekte/sda-wae-p-wise-2023-24/gruppe-2.git
+   git clone https://github.com/felixBtzr/UN-Resolution-Tracker-2022.git
    ```
 
 3. Wechseln Sie in das Projektverzeichnis:
 
    ```bash
-   cd gruppe2
+   cd UN-Resolution-Tracker-2022
    ```
 
 4. Installieren Sie die erforderlichen Abhängigkeiten:
